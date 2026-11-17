@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Practica control de gastos</title>
+  </head>
+  <body>
+    <main class="appGastos">
+      <section class="tarjetaSaldo">
+        <h1>Control de gastos</h1>
+        <p id="tituloSaldo">Saldo disponible</p>
+        <h2 id="cantidadSaldo">0€</h2>
+        <p id="fraseSaldo" class="estado">Esperando saldo...</p>
+      </section>
+
+      <section class="tarjetaMovimientos">
+        <input
+          type="text"
+          name="movimiento"
+          id="inputMovimiento"
+          placeholder="Ej: Café, compra, gasolina..."
+        />
+        <input
+          type="number"
+          name="cantidad"
+          id="inputCantidad"
+          placeholder="Cantidad en €"
+        />
+        <button id="btnIngresos">Ingreso</button>
+        <button id="btnGastos">Gasto</button>
+      </section>
+
+      <section class="tarjetaFiltros">
+        <button id="btnFiltroTodos">Todos los movimientos</button>
+        <button id="btnFiltroIngresos">Todos los ingresos</button>
+        <button id="btnFiltroGastos">Todos los gastos</button>
+      </section>
+
+      <section class="tarjetaUltimosMovimientos">
+        <h3 id="tituloUltimos">Últimos movimientos</h3>
+        <ul id="listaUltimos"></ul>
+      </section>
+
+      <footer class="resumen">
+        <p>Total gastado: <strong id="totalGastado">0 €</strong></p>
+      </footer>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

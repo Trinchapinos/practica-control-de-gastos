@@ -1,0 +1,134 @@
+:root {
+  --fondo: #dfe3e8;
+  --tarjeta-oscura: #1f2937;
+  --tarjeta-clara: #ffffff;
+  --borde: #cbd2d9;
+  --texto: #1f2937;
+  --texto-claro: #f1f5f9;
+  --texto-suave: #6b7280;
+  --ingreso: #1f8a5b;
+  --ingreso-fondo: #e3f5ec;
+  --gasto: #c93c3c;
+  --gasto-fondo: #fbe7e7;
+  --acento: #3b4cca;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background-color: #dfe3e8;
+  color: #2e2e8a;
+  padding: 30px 15px;
+}
+
+.appGastos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.tarjetaSaldo {
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 40px 20px;
+  border: solid 1px #cbd2d9;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+}
+
+#tituloSaldo {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+#cantidadSaldo {
+  text-align: center;
+  color: #f1f5f9;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+#fraseSaldo {
+  text-align: center;
+  color: #f1f5f9;
+  font-style: italic;
+}
+
+.tarjetaMovimientos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tarjetaMovimientos input,
+.tarjetaMovimientos button {
+  display: flex;
+  flex: 1 1 calc(50% - 10px);
+}
+
+#inputMovimiento,
+#inputCantidad {
+  padding: 10px;
+  border-radius: 6px;
+  border: solid 2px rgba(37, 33, 33, 0.753);
+  font-size: 0.75rem;
+  font-weight: 550;
+}
+
+#btnIngresos {
+  padding: 10px;
+  border-radius: 6px;
+  border: solid 2px green;
+  background-color: #82f0c0cb;
+  font-size: 1rem;
+  align-content: center;
+  cursor: pointer;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#btnGastos {
+  padding: 10px;
+  border-radius: 6px;
+  border: solid 2px red;
+  background-color: #f0a2a2cb;
+  font-size: 1rem;
+  align-content: center;
+  cursor: pointer;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.tarjetaFiltros {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#btnFiltroTodos,
+#btnFiltroIngresos,
+#btnFiltroGastos {
+  padding: 10px 20px;
+  background-color: #a7b3cabb;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 6px;
+}
