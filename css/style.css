@@ -120,6 +120,7 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 #btnFiltroTodos,
@@ -131,4 +132,114 @@ h1 {
   font-weight: bold;
   border: solid 2px black;
   border-radius: 6px;
+}
+
+.tarjetaUltimosMovimientos {
+  display: flex;
+  flex-direction: column;
+  background-color: #6464646b;
+  padding: 25px 40px;
+  border: solid 2px black;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+#tituloUltimos {
+  font-size: 1.5rem;
+  color: #1f2937;
+  width: 100%;
+  max-width: 500px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#listaUltimos {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+#listaUltimos li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.concepto {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cantidad {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ingreso {
+  color: var(--ingreso);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.gasto {
+  color: var(--gasto);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#totalGastado {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* ///////////// RESPONSIVE //////////// */
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .appGastos {
+    gap: 30px;
+  }
+
+  .tarjetaSaldo {
+    margin-top: 20px;
+    padding: 30px 15px;
+  }
+
+  #cantidadSaldo {
+    font-size: 32px;
+  }
+
+  .tarjetaMovimientos {
+    width: 100%;
+  }
+
+  .tarjetaMovimientos input,
+  .tarjetaMovimientos button {
+    flex: 1 1 100%;
+  }
+
+  .tarjetaFiltros {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tarjetaUltimosMovimientos {
+    padding: 20px 15px;
+  }
+
+  #listaUltimos li {
+    gap: 15px;
+  }
 }
